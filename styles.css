@@ -5,25 +5,27 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #03314e;
   font-size: 1.2rem;
-  color: #F3F4F6;
+  color: #f3f4f6;
   line-height: 1.6;
 }
 
 a {
-  color: #3B82F6;
+  color: #3b82f6;
   text-decoration: none;
 }
-
 a:hover {
+  color: #10b981;
   text-decoration: underline;
-  color: #10B981;
 }
 
-.btn, button, input[type="submit"] {
-  background-color: #3B82F6;
+button,
+.btn,
+#download_pdf,
+input[type="submit"] {
+  background-color: #3b82f6;
   color: white;
   font-weight: bold;
   font-size: medium;
@@ -33,37 +35,52 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
-
-.btn:hover, button:hover {
-  background-color: #2563EB;
+button:hover {
+  background-color: #2563eb;
+}
+summary {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: fit-content;
+  margin: 1rem auto;
+  text-align: center;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
-  background-color: #1F2937;
+  background-color: #1f2937;
   border: 1px solid #374151;
   color: white;
   border-radius: 5px;
 }
 
 .section-container {
-  width: auto;
   padding: 2rem;
   background-color: #111827;
   text-align: center;
 }
-
 .section-container h2 {
-  color: #10B981;
+  color: #10b981;
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
-
 .section-container p,
-.section-container li {
-  color: #E5E7EB;
+.section-container li,
+.section-description {
+  color: #e5e7eb;
+}
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
 }
 
 .hero {
@@ -73,9 +90,8 @@ input, textarea {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  color: #F3F4F6;
+  color: #f3f4f6;
 }
-
 .hero-video {
   position: absolute;
   top: 0;
@@ -85,7 +101,6 @@ input, textarea {
   object-fit: cover;
   z-index: 0;
 }
-
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -95,32 +110,34 @@ input, textarea {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
   padding: 2rem;
 }
-
 .hero-content h1 {
-  font-size: 2.8rem;
-  color: #10B981;
+  font-size: 2.4rem;
+  color: #10b981;
+  margin: 2rem;
 }
-
 .hero-content p {
   font-size: 2rem;
-  color: #D1D5DB;
+  color: #d1d5db;
   margin-top: 10px;
 }
-
+#intro {
+  font-size: 1rem;
+  margin-bottom: 6rem;
+  font-style: italic;
+  font-weight: bolder;
+}
 .video-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
 }
-
 .videos {
   width: 100%;
   max-width: 800px;
@@ -135,13 +152,11 @@ input, textarea {
   gap: 0.75rem;
   margin-top: 1rem;
 }
-
 @media (min-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (min-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -149,49 +164,35 @@ input, textarea {
 }
 
 .card {
-  background-color: #1F2937;
+  background-color: #1f2937;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.4rem;
-  max-width: 100%;
 }
-
 .card h3 {
-  color: #10B981;
+  color: #10b981;
   font-size: 1.2rem;
-  margin-bottom: 0.3rem;
 }
-
 .card p {
   font-size: 0.95rem;
-  color: #D1D5DB;
-  margin: 0.2rem 0;
+  color: #d1d5db;
 }
-
 .card i {
   font-size: 2rem;
-  color: #F3F4F6;
+  color: #f3f4f6;
 }
 
-/* Project image */
 .project-img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.5rem;
-}
-
-.section-description {
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-  color: #E5E7EB;
 }
 
 .contact-form {
